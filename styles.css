@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ed; /* Light yellow background */
+}
+
+header {
+    background-color: transparent; /* Blue */
+    color: #fff; /* White text */
+    padding: 1em;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: transparent; /* Blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1; /* Ensure sidebar stays above main content */
+}
+
+.sidebar .btn {
+    color: #595d63;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sidebar .btn i {
+    margin-right: 10px;
+}
+
+.sidebar .btn:hover {
+    background-color: #afccfa; /* Slightly darker blue on hover */
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 200px; /* Adjust margin to accommodate fixed sidebar */
+    padding: 2em;
+    background-color: #ffffff; /* White background for main content */
+}
+
+#createNoteArea {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto; /* Center the create note area horizontally */
+}
+
+#notesContainer .note {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#notesContainer .note p {
+    margin: 0;
+}
+
+#notesContainer .note .actions {
+    margin-top: 1em;
+    text-align: right;
+}
+
+#notesContainer .note .actions button {
+    margin-left: 0.5em;
+}
